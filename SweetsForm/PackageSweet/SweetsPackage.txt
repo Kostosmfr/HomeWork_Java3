@@ -1,0 +1,2 @@
+Name: Banoparf\d, Price = 500,5, Weight = 346,5
+Name: Banopard, Price = 500,5, Weight = 346,5

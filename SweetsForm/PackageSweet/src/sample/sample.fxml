@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="416.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <VBox fx:id="" layoutX="14.0" layoutY="17.0" prefHeight="200.0" prefWidth="142.0">
+      <children>
+        <Label text="Name" />
+        <TextField fx:id="name" disable="true" opacity="0.4" prefWidth="64.0" />
+        <Label text="Price" />
+        <TextField fx:id="price" disable="true" opacity="0.4" prefWidth="200.0" />
+        <Label text="Weight" />
+        <TextField fx:id="weight" disable="true" opacity="0.4" prefWidth="200.0" />
+        <Label text="Uniq" />
+        <TextField fx:id="uniqParam" disable="true" opacity="0.4" prefWidth="200.0" />
+      </children>
+    </VBox>
+    <Button fx:id="btn" layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#saveSweetInPack" prefWidth="100.0" text="Добавить" />
+    <ChoiceBox fx:id="cbox" layoutX="214.0" layoutY="23.0" onContextMenuRequested="#contextRequest" onMouseEntered="#toolTipComboBox" onMousePressed="#contextRequest" prefWidth="172.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Sweets" />
+          <String fx:value="Cake" />
+          <String fx:value="Candy" />
+          <String fx:value="Chocolate" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <TextArea fx:id="tArea" disable="true" layoutX="166.0" layoutY="62.0" opacity="1.0" prefWidth="234.0" wrapText="true" />
+    <Label layoutX="214.0" layoutY="6.0" text="Choice SwEeTs" />
+    <Label fx:id="lbTotal" layoutX="166.0" layoutY="240.0" text="tPrice: tWeight:" />
+  </children>
+</AnchorPane>

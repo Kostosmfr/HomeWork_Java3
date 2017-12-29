@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="73.0" prefWidth="469.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Button fx:id="btnCreateFileNew" layoutX="26.0" layoutY="36.0" mnemonicParsing="false" onAction="#backupOldFile" text="Собрать новый" />
+    <Button fx:id="btnCreateFileOld" layoutX="148.0" layoutY="36.0" mnemonicParsing="false" onAction="#addInOldFile" text="Добавить в старый" />
+    <Button fx:id="btnCreateFileClose" layoutX="375.0" layoutY="36.0" mnemonicParsing="false" onAction="#closeProgramm" text="Закрыть" />
+    <Label layoutX="26.0" layoutY="14.0" text="Добавить сладости в новый пакет или продолжить добавлять их в старый?" />
+  </children>
+</AnchorPane>
